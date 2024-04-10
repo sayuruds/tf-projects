@@ -69,6 +69,9 @@ module "bas-ec2" {
               yum install -y docker
               service docker start
               usermod -a -G docker ec2-user
+              mkdir project
+              touch Dockerfile
+              touch index.html
               EOF
 
   tags = {

@@ -83,40 +83,6 @@ variable "cert-arn" {
 
 ###################### ec2 ######################
 
-# web ec2
-variable "web-ec2_name" {
-  type = string
-}
-
-variable "web-ami" {
-  type = string
-}
-
-variable "web-ec2_type" {
-  type = string
-}
-
-variable "web-ec2_key" {
-  type = string
-}
-
-# main ec2
-variable "main-ec2_name" {
-  type = string
-}
-
-variable "main-ami" {
-  type = string
-}
-
-variable "main-ec2_type" {
-  type = string
-}
-
-variable "main-ec2_key" {
-  type = string
-}
-
 # bastion ec2
 variable "bas-ec2_name" {
   type = string

@@ -22,6 +22,8 @@ module "bas-ec2" {
               yum install -y docker
               service docker start
               usermod -a -G docker ec2-user
+              docker pull nginx
+              docker run -d -p 8080:80 --name my-nginx nginx
               EOF
 
   tags = {

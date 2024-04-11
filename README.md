@@ -2,7 +2,7 @@
 
 Deploy an Application to Amazon ECS With EC2 | Docker | ECR | Fargate | Load balancer
 
--- docker build commands --
-mkdir project
-touch Dockerfile, index.html
-docker build -t web-image .
+-- docker commands --
+docker pull nginx
+docker run -d -p 8080:80 --name my-nginx nginx
+

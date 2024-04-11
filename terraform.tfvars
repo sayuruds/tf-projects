@@ -35,3 +35,12 @@ bas-ami = "ami-051f8a213df8bc089"
 bas-ec2_type = "t2.micro"
 bas-ec2_key = "web-app-bastion-kp"
 
+
+###################### ecr ######################
+
+ecr-name = "web_app-ecr"
+
+
+###################### iam ######################
+
+ecr-role = "web_app-ecr_role"

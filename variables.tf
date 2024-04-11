@@ -101,3 +101,15 @@ variable "bas-ec2_key" {
 }
 
 
+###################### ecr ######################
+
+variable "ecr-name" {
+  type = string
+}
+
+
+###################### iam ######################
+
+variable "ecr-role" {
+  type = string
+}

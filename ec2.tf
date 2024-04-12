@@ -6,7 +6,8 @@ module "bas-ec2" {
 
   ami                    = var.bas-ami
   instance_type          = var.bas-ec2_type
-  key_name               = var.bas-ec2_key
+  #key_name               = var.bas-ec2_key
+  key_name = module.secrets.bas-ec2-key
   vpc_security_group_ids = [module.bastion-sg.security_group_id]
   subnet_id              = module.vpc.public_subnets[0]
   associate_public_ip_address = true

@@ -78,9 +78,9 @@ variable "bas-ec2_type" {
   type = string
 }
 
-variable "bas-ec2_key" {
-  type = string
-}
+# variable "bas-ec2_key" {
+#   type = string
+# }
 
 
 ###################### alb ######################

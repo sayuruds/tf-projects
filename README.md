@@ -14,4 +14,4 @@ aws configure
 ecr push commands 1, 3, 4
 
 -- Deploying order (ex: terraform apply --target=module.vpc)
-vpc > bastion-sg > bas-ec2 > ecr > all
+secrets > vpc > bastion-sg > bas-ec2 > ecr > all

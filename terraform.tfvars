@@ -27,7 +27,7 @@ igw-name = "web_app-igw"
 bas-ec2_name = "web_app-bastion_ec2"
 bas-ami = "ami-051f8a213df8bc089"
 bas-ec2_type = "t2.micro"
-bas-ec2_key = "web-app-bastion-kp"
+#bas-ec2_key = "web-app-bastion-kp"
 
 
 ###################### alb ######################

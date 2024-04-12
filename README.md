@@ -2,7 +2,16 @@
 
 Deploy an Application to Amazon ECS With EC2 | Docker | ECR | Fargate | Load balancer
 
--- docker commands --
-docker pull nginx
-docker run -d -p 8080:80 --name my-nginx nginx
+-- In Bastion
+-- create html file and Dockerfile same dir
+-- Dockerfile content --
+FROM httpd
+COPY . /usr/local/apache2/htdocs/
 
+docker build -t webapp .
+
+aws configure
+ecr push commands 1, 3, 4
+
+-- Deploying order [ex: terraform apply --target=module.vpc]
+vpc > bastion-sg > bas-ec2 > ecr > all

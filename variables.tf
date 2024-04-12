@@ -62,24 +62,6 @@ variable "igw-name" {
 }
 
 
-###################### alb ######################
-
-# alb vars
-variable "alb-name" {
-  type = string
-}
-
-# alb tg vars
-variable "alb-tg_name" {
-  type = string
-}
-
-# alb listners
-variable "cert-arn" {
-  type = string
-}
-
-
 
 ###################### ec2 ######################
 
@@ -101,9 +83,13 @@ variable "bas-ec2_key" {
 }
 
 
-###################### ecr ######################
+###################### alb ######################
 
-variable "ecr-name" {
+variable "alb-name" {
+  type = string
+}
+
+variable "alb-tg_name" {
   type = string
 }
 
@@ -111,5 +97,9 @@ variable "ecr-name" {
 ###################### iam ######################
 
 variable "ecr-role" {
+  type = string
+}
+
+variable "ecs-role" {
   type = string
 }

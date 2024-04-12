@@ -11,11 +11,6 @@ module "bas-ec2" {
   subnet_id              = module.vpc.public_subnets[0]
   associate_public_ip_address = true
 
-  # root_block_device = [{
-  #   volume_size = 10
-  #   volume_type = "gp3"
-  # }]
-
   user_data = <<-EOF
               #!/bin/bash
               yum update -y

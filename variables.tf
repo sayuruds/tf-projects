@@ -103,3 +103,27 @@ variable "ecr-role" {
 variable "ecs-role" {
   type = string
 }
+
+
+
+###################### ecs ######################
+
+# ecs cluster
+variable "ecs-cluster-name" {
+  type = string
+}
+
+# ecs task definition
+variable "ecs-taskdf-name" {
+  type = string
+}
+
+variable "ecs-container-name" {
+  type = string
+}
+
+# ecs service
+variable "ecs-service-name" {
+  type = string
+}
+

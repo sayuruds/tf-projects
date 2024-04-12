@@ -2,7 +2,7 @@
 
 region = "us-east-1"
 creator = "sayurud"
-project = "web_app"
+project = "web-app"
 #profile = "web_app"
 access_key = ""
 secret_key = ""
@@ -40,3 +40,11 @@ alb-tg_name = "web-app-albtg"
 
 ecr-role = "web_app-ecr_role"
 ecs-role = "web_app-ecs_role"
+
+
+###################### iam ######################
+
+ecs-cluster-name = "web-app-cluster"
+ecs-taskdf-name = "web-app-task-df"
+ecs-container-name = "web-app-con"
+ecs-service-name = "web-app-service"

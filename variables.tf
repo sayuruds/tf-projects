@@ -12,6 +12,14 @@ variable "secret_key" {
   type = string
 }
 
+variable "creator" {
+  type = string
+}
+
+variable "project" {
+  type = string
+}
+
 
 ################### s3 ###################
 

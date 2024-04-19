@@ -63,35 +63,6 @@ variable "igw-name" {
 
 
 
-###################### ec2 ######################
-
-# bastion ec2
-variable "bas-ec2_name" {
-  type = string
-}
-
-variable "bas-ami" {
-  type = string
-}
-
-variable "bas-ec2_type" {
-  type = string
-}
-
-# variable "bas-ec2_key" {
-#   type = string
-# }
-
-
-###################### alb ######################
-
-variable "alb-name" {
-  type = string
-}
-
-variable "alb-tg_name" {
-  type = string
-}
 
 
 ###################### iam ######################
@@ -106,24 +77,7 @@ variable "ecs-role" {
 
 
 
-###################### ecs ######################
+###################### lambda ######################
 
-# ecs cluster
-variable "ecs-cluster-name" {
-  type = string
-}
 
-# ecs task definition
-variable "ecs-taskdf-name" {
-  type = string
-}
-
-variable "ecs-container-name" {
-  type = string
-}
-
-# ecs service
-variable "ecs-service-name" {
-  type = string
-}
 

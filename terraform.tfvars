@@ -21,30 +21,9 @@ igw-name = "web_app-igw"
 
 
 
-###################### ec2 ######################
-
-# bastion ec2
-bas-ec2_name = "web_app-bastion_ec2"
-bas-ami = "ami-051f8a213df8bc089"
-bas-ec2_type = "t2.micro"
-#bas-ec2_key = "web-app-bastion-kp"
-
-
-###################### alb ######################
-
-alb-name = "web-app-alb"
-alb-tg_name = "web-app-albtg"
-
-
 ###################### iam ######################
 
 ecr-role = "web_app-ecr_role"
 ecs-role = "web_app-ecs_role"
 
 
-###################### iam ######################
-
-ecs-cluster-name = "web-app-cluster"
-ecs-taskdf-name = "web-app-task-df"
-ecs-container-name = "web-app-con"
-ecs-service-name = "web-app-service"

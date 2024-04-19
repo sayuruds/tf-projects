@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     ec2_client = boto3.client('ec2')
 
     # Specify the VPC ID where you want to check and modify security groups
-    vpc_id = 'vpc-04380015d0da90a59'
+    vpc_id = "vpc_id"
 
     # Describe all security groups in the specified VPC
     response = ec2_client.describe_security_groups(Filters=[{'Name': 'vpc-id', 'Values': [vpc_id]}])

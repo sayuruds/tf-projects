@@ -2,7 +2,7 @@
 
 region = "us-east-1"
 creator = "sayurud"
-project = "sg-auto"
+project = "secgrp-auto"
 #profile = "sg-auto"
 access_key = ""
 secret_key = ""

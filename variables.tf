@@ -67,13 +67,7 @@ variable "igw-name" {
 
 ###################### iam ######################
 
-variable "ecr-role" {
-  type = string
-}
 
-variable "ecs-role" {
-  type = string
-}
 
 
 

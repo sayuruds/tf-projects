@@ -11,6 +11,10 @@ module "lambda" {
   create_role = false
   source_path = "lambdacode.py"
 
+  environment_variables = {
+    vpc_id = module.vpc.vpc_id
+  }
+
   tags = {
     Name = "${var.project}-lambda"
   }
